@@ -22,11 +22,14 @@
 		A9032D8A1BE6A60E00E56BBD /* Sour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9032D831BE6A60E00E56BBD /* Sour.jpg */; };
 		A9032D8B1BE6A60E00E56BBD /* Stout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9032D841BE6A60E00E56BBD /* Stout.jpg */; };
 		A9032D8C1BE6A60E00E56BBD /* Witbier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9032D851BE6A60E00E56BBD /* Witbier.jpg */; };
+		A905A0C21CCD85AB0026868F /* Hops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A905A0C11CCD85AB0026868F /* Hops.jpg */; };
+		A905A0C41CCD85DA0026868F /* HopsScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A905A0C31CCD85DA0026868F /* HopsScrollViewController.swift */; };
 		A908F1B91BB07F8700C0B1A1 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F1B81BB07F8700C0B1A1 /* Beer.swift */; };
 		A908F1BB1BB080E900C0B1A1 /* GlassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F1BA1BB080E900C0B1A1 /* GlassType.swift */; };
 		A908F1BD1BB081A500C0B1A1 /* IngredientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F1BC1BB081A500C0B1A1 /* IngredientType.swift */; };
 		A908F1BF1BB0893100C0B1A1 /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F1BE1BB0893100C0B1A1 /* Glass.swift */; };
 		A908F1C11BB08E9A00C0B1A1 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A908F1C01BB08E9A00C0B1A1 /* Ingredient.swift */; };
+		A91690B01CCBF37800C6AE36 /* RateMyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91690AF1CCBF37800C6AE36 /* RateMyApp.swift */; };
 		A91A71621C64355600FB8208 /* Amber_Ingr.png in Resources */ = {isa = PBXBuildFile; fileRef = A91A71581C64355600FB8208 /* Amber_Ingr.png */; };
 		A91A71631C64355600FB8208 /* Barleywine_Ingr.png in Resources */ = {isa = PBXBuildFile; fileRef = A91A71591C64355600FB8208 /* Barleywine_Ingr.png */; };
 		A91A71641C64355600FB8208 /* Belgian_Ingr.png in Resources */ = {isa = PBXBuildFile; fileRef = A91A715A1C64355600FB8208 /* Belgian_Ingr.png */; };
@@ -37,6 +40,7 @@
 		A91A71691C64355600FB8208 /* Sour_Ingr.png in Resources */ = {isa = PBXBuildFile; fileRef = A91A715F1C64355600FB8208 /* Sour_Ingr.png */; };
 		A91A716A1C64355600FB8208 /* Stout_Ingr.png in Resources */ = {isa = PBXBuildFile; fileRef = A91A71601C64355600FB8208 /* Stout_Ingr.png */; };
 		A91A716B1C64355600FB8208 /* Witbier_Ingr.png in Resources */ = {isa = PBXBuildFile; fileRef = A91A71611C64355600FB8208 /* Witbier_Ingr.png */; };
+		A91F5A841CCAB7FC000FEDCD /* MoreBeerStylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91F5A831CCAB7FC000FEDCD /* MoreBeerStylesViewController.swift */; };
 		A9262F1D1BB074ED00448CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9262F1C1BB074ED00448CBC /* AppDelegate.swift */; };
 		A9262F1F1BB074ED00448CBC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9262F1E1BB074ED00448CBC /* MainViewController.swift */; };
 		A9262F221BB074ED00448CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9262F201BB074ED00448CBC /* Main.storyboard */; };
@@ -151,11 +155,15 @@
 		A96B70AE1BB0B30B00ACF2F2 /* Stout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B70AD1BB0B30B00ACF2F2 /* Stout.swift */; };
 		A96B70B01BB0B34D00ACF2F2 /* Witbier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B70AF1BB0B34D00ACF2F2 /* Witbier.swift */; };
 		A96F4C0A1BB07E5F00E8E9AF /* BeerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F4C091BB07E5F00E8E9AF /* BeerType.swift */; };
+		A975245A1CCAD44A00B8FD05 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97524591CCAD44A00B8FD05 /* SearchViewController.swift */; };
 		A97DBD411BE6F3A300F932F2 /* Fermentation.png in Resources */ = {isa = PBXBuildFile; fileRef = A97DBD401BE6F3A300F932F2 /* Fermentation.png */; };
 		A988FFF41BB5ACAE00B42567 /* EvaluationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988FFF31BB5ACAE00B42567 /* EvaluationViewController.swift */; };
 		A988FFF61BB5ACE000B42567 /* GlasswareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988FFF51BB5ACE000B42567 /* GlasswareViewController.swift */; };
 		A988FFF81BB5AD1400B42567 /* CellaringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988FFF71BB5AD1400B42567 /* CellaringViewController.swift */; };
 		A988FFFA1BB5D12300B42567 /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988FFF91BB5D12300B42567 /* PageItemController.swift */; };
+		A98A53931CC9A1F7006884E2 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98A53921CC9A1F7006884E2 /* PaddingLabel.swift */; };
+		A99486741CD81C6A00573FCD /* Ales_vs_Lagers.PNG in Resources */ = {isa = PBXBuildFile; fileRef = A99486731CD81C6A00573FCD /* Ales_vs_Lagers.PNG */; };
+		A99486761CD81FCC00573FCD /* AlesVsLagersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99486751CD81FCC00573FCD /* AlesVsLagersViewController.swift */; };
 		A9AC1DDE1BBCA7DC00DB6C5E /* CellaringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC1DDD1BBCA7DC00DB6C5E /* CellaringViewModel.swift */; };
 		A9AC1DE01BBCA8EE00DB6C5E /* CellaringTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC1DDF1BBCA8EE00DB6C5E /* CellaringTips.swift */; };
 		A9C35EC41BB6FA430042E99A /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C35EC31BB6FA430042E99A /* BeerViewModel.swift */; };
@@ -203,11 +211,14 @@
 		A9032D831BE6A60E00E56BBD /* Sour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sour.jpg; sourceTree = "<group>"; };
 		A9032D841BE6A60E00E56BBD /* Stout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stout.jpg; sourceTree = "<group>"; };
 		A9032D851BE6A60E00E56BBD /* Witbier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Witbier.jpg; sourceTree = "<group>"; };
+		A905A0C11CCD85AB0026868F /* Hops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hops.jpg; sourceTree = "<group>"; };
+		A905A0C31CCD85DA0026868F /* HopsScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopsScrollViewController.swift; sourceTree = "<group>"; };
 		A908F1B81BB07F8700C0B1A1 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		A908F1BA1BB080E900C0B1A1 /* GlassType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassType.swift; sourceTree = "<group>"; };
 		A908F1BC1BB081A500C0B1A1 /* IngredientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientType.swift; sourceTree = "<group>"; };
 		A908F1BE1BB0893100C0B1A1 /* Glass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glass.swift; sourceTree = "<group>"; };
 		A908F1C01BB08E9A00C0B1A1 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		A91690AF1CCBF37800C6AE36 /* RateMyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateMyApp.swift; sourceTree = "<group>"; };
 		A91A71581C64355600FB8208 /* Amber_Ingr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amber_Ingr.png; sourceTree = "<group>"; };
 		A91A71591C64355600FB8208 /* Barleywine_Ingr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Barleywine_Ingr.png; sourceTree = "<group>"; };
 		A91A715A1C64355600FB8208 /* Belgian_Ingr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Belgian_Ingr.png; sourceTree = "<group>"; };
@@ -218,6 +229,7 @@
 		A91A715F1C64355600FB8208 /* Sour_Ingr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sour_Ingr.png; sourceTree = "<group>"; };
 		A91A71601C64355600FB8208 /* Stout_Ingr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stout_Ingr.png; sourceTree = "<group>"; };
 		A91A71611C64355600FB8208 /* Witbier_Ingr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Witbier_Ingr.png; sourceTree = "<group>"; };
+		A91F5A831CCAB7FC000FEDCD /* MoreBeerStylesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreBeerStylesViewController.swift; sourceTree = "<group>"; };
 		A9262F191BB074ED00448CBC /* BeerAuthority.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerAuthority.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9262F1C1BB074ED00448CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9262F1E1BB074ED00448CBC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -338,11 +350,15 @@
 		A96B70AD1BB0B30B00ACF2F2 /* Stout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stout.swift; sourceTree = "<group>"; };
 		A96B70AF1BB0B34D00ACF2F2 /* Witbier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Witbier.swift; sourceTree = "<group>"; };
 		A96F4C091BB07E5F00E8E9AF /* BeerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerType.swift; sourceTree = "<group>"; };
+		A97524591CCAD44A00B8FD05 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A97DBD401BE6F3A300F932F2 /* Fermentation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fermentation.png; sourceTree = "<group>"; };
 		A988FFF31BB5ACAE00B42567 /* EvaluationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluationViewController.swift; sourceTree = "<group>"; };
 		A988FFF51BB5ACE000B42567 /* GlasswareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlasswareViewController.swift; sourceTree = "<group>"; };
 		A988FFF71BB5AD1400B42567 /* CellaringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellaringViewController.swift; sourceTree = "<group>"; };
 		A988FFF91BB5D12300B42567 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		A98A53921CC9A1F7006884E2 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		A99486731CD81C6A00573FCD /* Ales_vs_Lagers.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ales_vs_Lagers.PNG; sourceTree = "<group>"; };
+		A99486751CD81FCC00573FCD /* AlesVsLagersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlesVsLagersViewController.swift; sourceTree = "<group>"; };
 		A9AC1DDD1BBCA7DC00DB6C5E /* CellaringViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellaringViewModel.swift; sourceTree = "<group>"; };
 		A9AC1DDF1BBCA8EE00DB6C5E /* CellaringTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellaringTips.swift; sourceTree = "<group>"; };
 		A9C35EC31BB6FA430042E99A /* BeerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
@@ -489,6 +505,11 @@
 				A9F6038D1BE6D94E0066CC24 /* BrewingViewController.swift */,
 				A9F6038F1BE6D9930066CC24 /* BrewingItemController.swift */,
 				A9F35F5B1C55297800963AC7 /* SplashScreenViewController.swift */,
+				A91F5A831CCAB7FC000FEDCD /* MoreBeerStylesViewController.swift */,
+				A97524591CCAD44A00B8FD05 /* SearchViewController.swift */,
+				A905A0C31CCD85DA0026868F /* HopsScrollViewController.swift */,
+				A91690AF1CCBF37800C6AE36 /* RateMyApp.swift */,
+				A99486751CD81FCC00573FCD /* AlesVsLagersViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -527,6 +548,7 @@
 			children = (
 				A95549F21C62B98C00DEB7C7 /* HexColor.swift */,
 				A938CDA51C838D8B00146058 /* UIDevice.swift */,
+				A98A53921CC9A1F7006884E2 /* PaddingLabel.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -655,6 +677,8 @@
 		A9DE7E401BE1CFA3002C76C8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A905A0C11CCD85AB0026868F /* Hops.jpg */,
+				A99486731CD81C6A00573FCD /* Ales_vs_Lagers.PNG */,
 				A96F63C51C54103A00917F7E /* Splash */,
 				A946F8B91C09CA9B0004B7A9 /* Ingredients */,
 				A9F603911BE6DBD80066CC24 /* Brewing */,
@@ -815,6 +839,7 @@
 				A94EAE181C59865500C67EAF /* beerapp_final_00068.jpg in Resources */,
 				A9032D7D1BE6A5FD00E56BBD /* Amber.jpg in Resources */,
 				A9032D7A1BE6A28800E56BBD /* Pint.jpg in Resources */,
+				A99486741CD81C6A00573FCD /* Ales_vs_Lagers.PNG in Resources */,
 				A94EAE0B1C59865500C67EAF /* beerapp_final_00055.jpg in Resources */,
 				A94EADFB1C59865500C67EAF /* beerapp_final_00039.jpg in Resources */,
 				A9032D891BE6A60E00E56BBD /* Porter.jpg in Resources */,
@@ -896,6 +921,7 @@
 				A94EAE271C59865500C67EAF /* beerapp_final_00083.jpg in Resources */,
 				A94EADDF1C59865500C67EAF /* beerapp_final_00011.jpg in Resources */,
 				A94EADD81C59865500C67EAF /* beerapp_final_00004.jpg in Resources */,
+				A905A0C21CCD85AB0026868F /* Hops.jpg in Resources */,
 				A94EADEF1C59865500C67EAF /* beerapp_final_00027.jpg in Resources */,
 				A94EADD71C59865500C67EAF /* beerapp_final_00003.jpg in Resources */,
 				A94EADFF1C59865500C67EAF /* beerapp_final_00043.jpg in Resources */,
@@ -947,10 +973,13 @@
 				A96F4C0A1BB07E5F00E8E9AF /* BeerType.swift in Sources */,
 				A988FFFA1BB5D12300B42567 /* PageItemController.swift in Sources */,
 				A958A65E1BE6DCE7000CDF2C /* BrewingProcess.swift in Sources */,
+				A905A0C41CCD85DA0026868F /* HopsScrollViewController.swift in Sources */,
 				A9F6038E1BE6D94E0066CC24 /* BrewingViewController.swift in Sources */,
+				A91690B01CCBF37800C6AE36 /* RateMyApp.swift in Sources */,
 				A9262F1F1BB074ED00448CBC /* MainViewController.swift in Sources */,
 				A908F1BB1BB080E900C0B1A1 /* GlassType.swift in Sources */,
 				A92AC7F51C0772ED00BF4ACF /* BeerTableViewController.swift in Sources */,
+				A91F5A841CCAB7FC000FEDCD /* MoreBeerStylesViewController.swift in Sources */,
 				A94C63191BB9FD98009A1238 /* EvaluationViewModel.swift in Sources */,
 				A96B709E1BB0AB4500ACF2F2 /* Amber.swift in Sources */,
 				A988FFF41BB5ACAE00B42567 /* EvaluationViewController.swift in Sources */,
@@ -974,10 +1003,13 @@
 				A9F35F5C1C55297800963AC7 /* SplashScreenViewController.swift in Sources */,
 				A9AC1DE01BBCA8EE00DB6C5E /* CellaringTips.swift in Sources */,
 				A908F1B91BB07F8700C0B1A1 /* Beer.swift in Sources */,
+				A99486761CD81FCC00573FCD /* AlesVsLagersViewController.swift in Sources */,
 				A96B70AC1BB0B2BC00ACF2F2 /* Sour.swift in Sources */,
 				A94C13DB1BE1805100F13448 /* PairingViewController.swift in Sources */,
 				A938CDA61C838D8B00146058 /* UIDevice.swift in Sources */,
+				A975245A1CCAD44A00B8FD05 /* SearchViewController.swift in Sources */,
 				A9AC1DDE1BBCA7DC00DB6C5E /* CellaringViewModel.swift in Sources */,
+				A98A53931CC9A1F7006884E2 /* PaddingLabel.swift in Sources */,
 				A96B70A81BB0B1F400ACF2F2 /* Pilsner.swift in Sources */,
 				A95549F31C62B98C00DEB7C7 /* HexColor.swift in Sources */,
 				A958A6621BE6E011000CDF2C /* BrewingViewModel.swift in Sources */,
@@ -1120,7 +1152,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BeerApp_beta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1135,7 +1167,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BeerApp_beta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

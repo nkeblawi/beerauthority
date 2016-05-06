@@ -3,7 +3,7 @@
 //  BeerApp_beta
 //
 //  Created by Nabeel Keblawi on 9/21/15.
-//  Copyright © 2015 Nabeel Keblawi. All rights reserved.
+//  Copyright © 2015 Maliszewksi Enterprises, LLC. All rights reserved.
 //
 
 import UIKit
@@ -14,9 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
-
         self.window?.tintColor = UIColor(hexString: "#3F3C2D")
+
         return true
     }
 

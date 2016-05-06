@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JmC-kC-BUW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JmC-kC-BUW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--Evaluation Controller-->
+        <!--Evaluation-->
         <scene sceneID="h1Q-dv-Mih">
             <objects>
-                <viewController title="Evaluation Controller" id="rSv-2A-Ro9" customClass="EvaluationViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Evaluation Controller" id="rSv-2A-Ro9" userLabel="Evaluation" customClass="EvaluationViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P7C-IE-YAp"/>
                         <viewControllerLayoutGuide type="bottom" id="Rhb-6Z-WYx"/>
@@ -76,10 +77,83 @@
             </objects>
             <point key="canvasLocation" x="-1210" y="1651"/>
         </scene>
-        <!--Ingredients-->
+        <!--Ales vs Lagers-->
+        <scene sceneID="Oot-du-wF5">
+            <objects>
+                <viewController id="F3a-gr-tbM" userLabel="Ales vs Lagers" customClass="AlesVsLagersViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="muv-46-PWc"/>
+                        <viewControllerLayoutGuide type="bottom" id="UpK-1A-V4j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dnp-g8-3qg" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKh-z4-c16" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bI-Hr-CuO" userLabel="TitleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ales_vs_Lagers.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="nXa-h4-xcc">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="nXa-h4-xcc" firstAttribute="top" secondItem="1bI-Hr-CuO" secondAttribute="top" id="HFT-Fh-xWX"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="Tdv-GG-bja">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="350"/>
+                                            </constraint>
+                                            <constraint firstItem="nXa-h4-xcc" firstAttribute="leading" secondItem="1bI-Hr-CuO" secondAttribute="leading" id="efA-cx-WYq"/>
+                                            <constraint firstAttribute="bottom" secondItem="nXa-h4-xcc" secondAttribute="bottom" id="p03-fZ-m0K"/>
+                                            <constraint firstAttribute="trailing" secondItem="nXa-h4-xcc" secondAttribute="trailing" id="pX8-UO-TZI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-WU-LQn" userLabel="BodyView">
+                                        <rect key="frame" x="0.0" y="200" width="600" height="287"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1bI-Hr-CuO" secondAttribute="trailing" id="4eX-KL-bXJ"/>
+                                    <constraint firstItem="1bI-Hr-CuO" firstAttribute="leading" secondItem="CKh-z4-c16" secondAttribute="leading" id="Bcb-GX-02H"/>
+                                    <constraint firstItem="1bI-Hr-CuO" firstAttribute="top" secondItem="CKh-z4-c16" secondAttribute="top" id="IZP-Cp-hnW"/>
+                                    <constraint firstItem="GhG-WU-LQn" firstAttribute="top" secondItem="1bI-Hr-CuO" secondAttribute="bottom" id="SHe-VM-Ape"/>
+                                    <constraint firstAttribute="trailing" secondItem="GhG-WU-LQn" secondAttribute="trailing" id="WI5-Z3-kHE"/>
+                                    <constraint firstAttribute="bottom" secondItem="GhG-WU-LQn" secondAttribute="bottom" id="Xxb-1Y-Iyw"/>
+                                    <constraint firstItem="GhG-WU-LQn" firstAttribute="leading" secondItem="CKh-z4-c16" secondAttribute="leading" id="ZIb-gT-zTq"/>
+                                    <constraint firstItem="1bI-Hr-CuO" firstAttribute="centerX" secondItem="CKh-z4-c16" secondAttribute="centerX" id="tvZ-Pa-S68"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CKh-z4-c16" firstAttribute="top" secondItem="muv-46-PWc" secondAttribute="bottom" id="JCE-wW-DXe"/>
+                            <constraint firstItem="CKh-z4-c16" firstAttribute="centerX" secondItem="Dnp-g8-3qg" secondAttribute="centerX" id="R0k-Bm-LIc"/>
+                            <constraint firstItem="CKh-z4-c16" firstAttribute="width" secondItem="Dnp-g8-3qg" secondAttribute="width" id="TIl-3y-tBT"/>
+                            <constraint firstItem="UpK-1A-V4j" firstAttribute="top" secondItem="CKh-z4-c16" secondAttribute="bottom" id="pJo-Ch-TEA"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Ales &amp; Lagers" image="beer_bottle_filled-25" id="0wt-cn-lx3" userLabel="Ales &amp; Lagers"/>
+                    <connections>
+                        <outlet property="AlesVsLagersImage" destination="nXa-h4-xcc" id="ULI-Xz-FKJ"/>
+                        <outlet property="bodyView" destination="GhG-WU-LQn" id="Z16-mQ-9Vr"/>
+                        <outlet property="contentView" destination="CKh-z4-c16" id="z3w-1R-dGJ"/>
+                        <outlet property="scrollView" destination="Dnp-g8-3qg" id="94W-VC-VDs"/>
+                        <outlet property="titleView" destination="1bI-Hr-CuO" id="04q-VX-tWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXf-Wh-HJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1210" y="2343"/>
+        </scene>
+        <!--Flavors-->
         <scene sceneID="gql-E1-ejc">
             <objects>
-                <tableViewController id="19E-RV-fLi" customClass="BeerTableViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="19E-RV-fLi" userLabel="Flavors" customClass="BeerTableViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="179" sectionHeaderHeight="28" sectionFooterHeight="28" id="aTw-bm-1BF">
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,8 +170,8 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amber_Ingr.png" translatesAutoresizingMaskIntoConstraints="NO" id="ceY-mj-ueJ">
                                             <rect key="frame" x="0.0" y="8" width="600" height="162.5"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd6-7Q-4gB">
-                                            <rect key="frame" x="8" y="8" width="584" height="162.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd6-7Q-4gB">
+                                            <rect key="frame" x="8" y="8" width="584" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                             <color key="textColor" red="0.24705882352941178" green="0.23529411764705882" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -112,7 +186,7 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="ceY-mj-ueJ" secondAttribute="trailingMargin" id="RW6-1U-g3J"/>
                                         <constraint firstItem="Bd6-7Q-4gB" firstAttribute="trailing" secondItem="PbR-QI-vTv" secondAttribute="trailingMargin" id="TrM-du-MGu"/>
                                         <constraint firstItem="Bd6-7Q-4gB" firstAttribute="top" secondItem="PbR-QI-vTv" secondAttribute="topMargin" id="m7n-7E-kyd"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Bd6-7Q-4gB" secondAttribute="bottom" id="zbz-qj-0CS"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Bd6-7Q-4gB" secondAttribute="bottom" id="zbz-qj-0CS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -126,16 +200,201 @@
                             <outlet property="delegate" destination="19E-RV-fLi" id="uCT-vV-Hhe"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Ingredients" image="barley-25" id="PC6-ZM-rrW"/>
+                    <tabBarItem key="tabBarItem" title="Flavors" image="barley-25" id="PC6-ZM-rrW" userLabel="Flavors"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lW5-dr-LZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="796" y="1651"/>
         </scene>
-        <!--Glassware Controller-->
+        <!--More Beer Styles-->
+        <scene sceneID="I5v-ZU-XzV">
+            <objects>
+                <viewController title="More Beer Styles Controller" id="4S5-Fz-ejD" userLabel="More Beer Styles" customClass="MoreBeerStylesViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yRK-Jk-cEY"/>
+                        <viewControllerLayoutGuide type="bottom" id="SRV-xy-ytP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lLl-IW-TyL">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DD4-v1-PCt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="Ub4-8d-mLW">
+                                        <leftBarButtonItems>
+                                            <barButtonItem title="&lt;" id="HOP-OA-fZ0" userLabel="Back">
+                                                <connections>
+                                                    <action selector="goBack:" destination="4S5-Fz-ejD" id="wGY-pB-j96"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="&gt;" id="vEI-33-WTQ" userLabel="Forward">
+                                                <connections>
+                                                    <action selector="goForward:" destination="4S5-Fz-ejD" id="U6L-NO-2wj"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </leftBarButtonItems>
+                                        <barButtonItem key="rightBarButtonItem" title="Reload" id="tdc-xc-idz">
+                                            <connections>
+                                                <action selector="reload:" destination="4S5-Fz-ejD" id="aQc-iI-qvY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQ7-i0-4On">
+                                <rect key="frame" x="0.0" y="44" width="600" height="443"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mrL-Ns-2K4">
+                                <rect key="frame" x="290" y="233" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VQ7-i0-4On" secondAttribute="trailing" id="2i5-Dr-qWc"/>
+                            <constraint firstItem="DD4-v1-PCt" firstAttribute="leading" secondItem="lLl-IW-TyL" secondAttribute="leading" id="5jW-eQ-Vvt"/>
+                            <constraint firstItem="VQ7-i0-4On" firstAttribute="leading" secondItem="lLl-IW-TyL" secondAttribute="leading" id="6to-co-UGb"/>
+                            <constraint firstItem="mrL-Ns-2K4" firstAttribute="centerX" secondItem="lLl-IW-TyL" secondAttribute="centerX" id="AOG-mE-a1N"/>
+                            <constraint firstItem="VQ7-i0-4On" firstAttribute="leading" secondItem="lLl-IW-TyL" secondAttribute="leading" id="MNU-W2-DIU"/>
+                            <constraint firstAttribute="trailing" secondItem="VQ7-i0-4On" secondAttribute="trailing" id="QH3-ch-hOZ"/>
+                            <constraint firstItem="DD4-v1-PCt" firstAttribute="top" secondItem="yRK-Jk-cEY" secondAttribute="bottom" id="Xni-bc-Qoh"/>
+                            <constraint firstItem="SRV-xy-ytP" firstAttribute="top" secondItem="VQ7-i0-4On" secondAttribute="bottom" id="llG-mZ-i05"/>
+                            <constraint firstItem="mrL-Ns-2K4" firstAttribute="centerY" secondItem="lLl-IW-TyL" secondAttribute="centerY" id="qOK-qc-Xfd"/>
+                            <constraint firstItem="VQ7-i0-4On" firstAttribute="top" secondItem="DD4-v1-PCt" secondAttribute="bottom" id="vbf-zE-7C0"/>
+                            <constraint firstAttribute="trailing" secondItem="DD4-v1-PCt" secondAttribute="trailing" id="xdR-AT-899"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="More Styles" image="beer_filled-25" id="XvA-vA-kof"/>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="indicator" destination="mrL-Ns-2K4" id="ipm-Ab-U1j"/>
+                        <outlet property="moreBeerStylesWebView" destination="VQ7-i0-4On" id="By9-Ak-fbh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cvy-7u-jB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2574" y="1651"/>
+        </scene>
+        <!--Search Beers-->
+        <scene sceneID="ER7-b3-Nhs">
+            <objects>
+                <viewController id="rlb-2A-eSg" userLabel="Search Beers" customClass="SearchViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6tZ-Gx-kbD"/>
+                        <viewControllerLayoutGuide type="bottom" id="drR-bq-IFG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5vb-0F-6qb">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-ZF-pO2">
+                                <rect key="frame" x="0.0" y="44" width="600" height="443"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pb7-mq-Zem">
+                                <rect key="frame" x="290" y="234" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opY-Gz-msi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="kvM-8z-GgU">
+                                        <leftBarButtonItems>
+                                            <barButtonItem title="&lt;" id="Sg0-jL-HuA" userLabel="Back">
+                                                <connections>
+                                                    <action selector="goBack:" destination="rlb-2A-eSg" id="M85-v6-YG4"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="&gt;" id="g6H-my-wfa" userLabel="Forward">
+                                                <connections>
+                                                    <action selector="goForward:" destination="rlb-2A-eSg" id="bSj-Wc-iHe"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </leftBarButtonItems>
+                                        <barButtonItem key="rightBarButtonItem" title="Reload" id="8Qb-6B-bKt">
+                                            <connections>
+                                                <action selector="reload:" destination="rlb-2A-eSg" id="pCE-P7-UMC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b8e-ZF-pO2" firstAttribute="top" secondItem="opY-Gz-msi" secondAttribute="bottom" id="W8R-8x-lv2"/>
+                            <constraint firstItem="pb7-mq-Zem" firstAttribute="centerY" secondItem="5vb-0F-6qb" secondAttribute="centerY" id="ZiS-P3-Y69"/>
+                            <constraint firstItem="drR-bq-IFG" firstAttribute="top" secondItem="b8e-ZF-pO2" secondAttribute="bottom" id="ino-xh-0jA"/>
+                            <constraint firstAttribute="trailing" secondItem="opY-Gz-msi" secondAttribute="trailing" id="nCh-x2-vQc"/>
+                            <constraint firstItem="opY-Gz-msi" firstAttribute="leading" secondItem="5vb-0F-6qb" secondAttribute="leading" id="pLP-Og-iCy"/>
+                            <constraint firstItem="b8e-ZF-pO2" firstAttribute="leading" secondItem="5vb-0F-6qb" secondAttribute="leading" id="rcH-0K-cmk"/>
+                            <constraint firstAttribute="trailing" secondItem="b8e-ZF-pO2" secondAttribute="trailing" id="tc1-EY-gnh"/>
+                            <constraint firstItem="pb7-mq-Zem" firstAttribute="centerX" secondItem="5vb-0F-6qb" secondAttribute="centerX" id="uDv-bP-T2H"/>
+                            <constraint firstItem="opY-Gz-msi" firstAttribute="top" secondItem="6tZ-Gx-kbD" secondAttribute="bottom" id="yQz-0O-Vcu"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search-icon-25" id="x57-Kk-Gbo"/>
+                    <connections>
+                        <outlet property="indicator" destination="pb7-mq-Zem" id="SW6-QT-x84"/>
+                        <outlet property="searchWebView" destination="b8e-ZF-pO2" id="S5R-os-ibU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSF-TL-1i0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2574" y="2343"/>
+        </scene>
+        <!--Hops-->
+        <scene sceneID="6ln-RC-GZZ">
+            <objects>
+                <viewController id="Cw8-lc-xPZ" userLabel="Hops" customClass="HopsScrollViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w8h-Ss-7LH"/>
+                        <viewControllerLayoutGuide type="bottom" id="gKZ-BB-5GN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hF0-BX-N9S">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WM-cW-KBr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hops.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3ix-Kw-C5v">
+                                        <rect key="frame" x="0.0" y="0.0" width="464" height="1468"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3ix-Kw-C5v" firstAttribute="top" secondItem="7WM-cW-KBr" secondAttribute="top" id="NiG-hT-Tge"/>
+                                    <constraint firstItem="3ix-Kw-C5v" firstAttribute="leading" secondItem="7WM-cW-KBr" secondAttribute="leading" id="QIr-4Z-sP9"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ix-Kw-C5v" secondAttribute="bottom" id="Wi8-sW-s0j"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ix-Kw-C5v" secondAttribute="trailing" id="Z4z-jG-MRn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7WM-cW-KBr" secondAttribute="trailing" id="M8p-hb-1pY"/>
+                            <constraint firstItem="7WM-cW-KBr" firstAttribute="top" secondItem="w8h-Ss-7LH" secondAttribute="bottom" id="XeB-hi-JVf"/>
+                            <constraint firstItem="7WM-cW-KBr" firstAttribute="leading" secondItem="hF0-BX-N9S" secondAttribute="leading" id="egV-uH-Trs"/>
+                            <constraint firstItem="gKZ-BB-5GN" firstAttribute="top" secondItem="7WM-cW-KBr" secondAttribute="bottom" id="iuL-JR-FjM"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Hops" image="barley-25" id="DlS-Y7-0hc"/>
+                    <connections>
+                        <outlet property="imageView" destination="3ix-Kw-C5v" id="gJv-l0-nAN"/>
+                        <outlet property="scrollView" destination="7WM-cW-KBr" id="gaS-kE-M6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6p-A8-gNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1892" y="2343"/>
+        </scene>
+        <!--Glassware-->
         <scene sceneID="qDI-td-bgK">
             <objects>
-                <viewController title="Glassware Controller" id="Ays-U5-Qni" customClass="GlasswareViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Glassware Controller" id="Ays-U5-Qni" userLabel="Glassware" customClass="GlasswareViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K3G-uT-pPG"/>
                         <viewControllerLayoutGuide type="bottom" id="bIf-1K-mDb"/>
@@ -200,10 +459,10 @@
             </objects>
             <point key="canvasLocation" x="-1892" y="1651"/>
         </scene>
-        <!--Splash Screen View Controller-->
+        <!--Splash Screen View-->
         <scene sceneID="EuH-EY-ZLk">
             <objects>
-                <viewController storyboardIdentifier="SplashScreenViewController" id="JmC-kC-BUW" customClass="SplashScreenViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashScreenViewController" id="JmC-kC-BUW" userLabel="Splash Screen View" customClass="SplashScreenViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4MJ-bh-kuk"/>
                         <viewControllerLayoutGuide type="bottom" id="V59-uF-Xcx"/>
@@ -232,10 +491,10 @@
             </objects>
             <point key="canvasLocation" x="-2754" y="-576"/>
         </scene>
-        <!--Main Page View Controller-->
+        <!--Main Page View-->
         <scene sceneID="d2j-of-IIF">
             <objects>
-                <viewController title="Main Page View Controller" id="Xg5-jz-L8Q" customClass="MainViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main Page View Controller" id="Xg5-jz-L8Q" userLabel="Main Page View" customClass="MainViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7yI-HH-j02"/>
                         <viewControllerLayoutGuide type="bottom" id="2zb-Ki-vQw"/>
@@ -245,16 +504,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" image="beer_filled-25" id="nzL-2H-lOp"/>
+                    <tabBarItem key="tabBarItem" title="Styles" image="beer_filled-25" id="nzL-2H-lOp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ay-XW-n5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-274" y="-145"/>
         </scene>
-        <!--Brewing View Controller-->
+        <!--Brewing View-->
         <scene sceneID="yfJ-1J-bVB">
             <objects>
-                <viewController title="Brewing View Controller" id="i96-Tq-V48" customClass="BrewingViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Brewing View Controller" id="i96-Tq-V48" userLabel="Brewing View" customClass="BrewingViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3VZ-BW-Ija"/>
                         <viewControllerLayoutGuide type="bottom" id="IY2-hK-KVD"/>
@@ -323,9 +582,15 @@
                                     <constraint firstItem="h1C-YA-EwU" firstAttribute="leading" secondItem="Iyh-Kk-u0S" secondAttribute="leading" id="TZS-t9-JJe"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zxF-i5-Twd">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zxF-i5-Twd">
                                 <rect key="frame" x="0.0" y="70" width="600" height="483"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-wJ-IPK" customClass="PaddingLabel" customModule="BeerAuthority" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="538.5" width="600" height="14.5"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -333,15 +598,19 @@
                             <constraint firstItem="bkx-QM-iTq" firstAttribute="top" secondItem="nj6-f5-IaT" secondAttribute="bottom" constant="5" id="BUv-K0-toy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Iyh-Kk-u0S" secondAttribute="trailing" id="KYw-IE-g32"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nj6-f5-IaT" secondAttribute="trailing" id="Kca-XI-c6Z"/>
+                            <constraint firstAttribute="trailing" secondItem="aHc-wJ-IPK" secondAttribute="trailing" id="RGT-UJ-Zlc"/>
                             <constraint firstItem="nj6-f5-IaT" firstAttribute="top" secondItem="zxF-i5-Twd" secondAttribute="bottom" constant="10" id="Tca-gi-FT2"/>
+                            <constraint firstItem="aHc-wJ-IPK" firstAttribute="leading" secondItem="GrQ-ce-dq7" secondAttribute="leading" id="UEo-qZ-nnk"/>
                             <constraint firstItem="nj6-f5-IaT" firstAttribute="leading" secondItem="GrQ-ce-dq7" secondAttribute="leadingMargin" id="VsZ-1V-0E0"/>
                             <constraint firstItem="zxF-i5-Twd" firstAttribute="top" secondItem="Iyh-Kk-u0S" secondAttribute="bottom" id="W8x-eI-eDD"/>
                             <constraint firstItem="Iyh-Kk-u0S" firstAttribute="leading" secondItem="GrQ-ce-dq7" secondAttribute="leadingMargin" id="YVB-yb-G7y"/>
                             <constraint firstItem="zxF-i5-Twd" firstAttribute="leading" secondItem="GrQ-ce-dq7" secondAttribute="leadingMargin" constant="-20" id="c0r-jH-SlP"/>
+                            <constraint firstItem="aHc-wJ-IPK" firstAttribute="bottom" secondItem="zxF-i5-Twd" secondAttribute="bottom" id="kQ2-oB-Z0N"/>
                             <constraint firstItem="Iyh-Kk-u0S" firstAttribute="top" secondItem="ITi-b5-mta" secondAttribute="bottom" id="q6d-6d-l8U"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="beerDescriptionLabel" destination="aHc-wJ-IPK" id="Fu5-rs-J5e"/>
                         <outlet property="beerImage" destination="zxF-i5-Twd" id="D33-VL-ZEs"/>
                         <outlet property="buttonRecommendedURL" destination="nj6-f5-IaT" id="Phh-y9-lxK"/>
                         <outlet property="strBeerLabel" destination="h1C-YA-EwU" id="rpi-eB-SNk"/>
@@ -363,33 +632,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9pu-Z9-PtM" userLabel="Brew Instructions">
-                                <rect key="frame" x="20" y="225" width="39.5" height="19.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="0kS-RD-Nv4">
-                                        <variation key="heightClass=compact" constant="0.0"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" priority="999" constant="200" id="shm-HD-QdN"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="9pu-Z9-PtM" userLabel="Brew Instructions" customClass="PaddingLabel" customModule="BeerAuthority" customModuleProvider="target">
+                                <rect key="frame" x="20" y="220" width="39.5" height="19.5"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.23529411764705882" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0kS-RD-Nv4"/>
-                                        <exclude reference="shm-HD-QdN"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="0kS-RD-Nv4"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="shm-HD-QdN"/>
-                                    </mask>
-                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wlc-r2-gFi">
                                 <rect key="frame" x="20" y="20" width="560" height="200"/>
@@ -402,11 +650,6 @@
                                         <exclude reference="ze3-tc-LOH"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="3nx-BB-G39"/>
-                                    </mask>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
                                         <include reference="ze3-tc-LOH"/>
@@ -417,28 +660,14 @@
                         <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wlc-r2-gFi" firstAttribute="leading" secondItem="x7b-S1-17G" secondAttribute="leadingMargin" id="1UU-JE-RQk"/>
-                            <constraint firstItem="cX8-Tf-HbM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9pu-Z9-PtM" secondAttribute="bottom" priority="750" id="RAd-We-eCu"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="9pu-Z9-PtM" secondAttribute="trailing" id="Wn3-c6-BH6"/>
-                            <constraint firstItem="cX8-Tf-HbM" firstAttribute="top" secondItem="9pu-Z9-PtM" secondAttribute="bottom" constant="160.5" id="kVB-Sv-Qyq">
-                                <variation key="heightClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="wlc-r2-gFi" secondAttribute="trailing" id="oAo-ao-Vfr"/>
+                            <constraint firstItem="cX8-Tf-HbM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9pu-Z9-PtM" secondAttribute="bottom" id="pYK-Nj-vtc"/>
                             <constraint firstItem="wlc-r2-gFi" firstAttribute="top" secondItem="6Hi-HS-rSt" secondAttribute="bottom" id="qfn-n9-Ude"/>
                             <constraint firstItem="9pu-Z9-PtM" firstAttribute="leading" secondItem="x7b-S1-17G" secondAttribute="leadingMargin" id="tSe-xt-cpT"/>
+                            <constraint firstItem="9pu-Z9-PtM" firstAttribute="top" secondItem="wlc-r2-gFi" secondAttribute="bottom" id="vux-Q6-rqb"/>
                             <constraint firstItem="wlc-r2-gFi" firstAttribute="centerX" secondItem="x7b-S1-17G" secondAttribute="centerX" id="z7x-nA-PCB"/>
-                            <constraint firstItem="9pu-Z9-PtM" firstAttribute="top" secondItem="wlc-r2-gFi" secondAttribute="bottom" constant="5" id="zDa-L8-GaX"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="kVB-Sv-Qyq"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <exclude reference="RAd-We-eCu"/>
-                                <include reference="kVB-Sv-Qyq"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="brewImageView" destination="wlc-r2-gFi" id="MGS-FG-Mw0"/>
@@ -449,10 +678,10 @@
             </objects>
             <point key="canvasLocation" x="1064" y="538"/>
         </scene>
-        <!--Cellaring Controller-->
+        <!--Cellaring-->
         <scene sceneID="6lr-TA-i6o">
             <objects>
-                <viewController title="Cellaring Controller" id="5ob-H4-Ycs" customClass="CellaringViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Cellaring Controller" id="5ob-H4-Ycs" userLabel="Cellaring" customClass="CellaringViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZwY-1v-gni"/>
                         <viewControllerLayoutGuide type="bottom" id="T1f-vh-wvy"/>
@@ -520,10 +749,10 @@
             </objects>
             <point key="canvasLocation" x="-542" y="1651"/>
         </scene>
-        <!--Food Pairing Controller-->
+        <!--Food Pairing-->
         <scene sceneID="zJ5-aK-B1M">
             <objects>
-                <viewController title="Food Pairing Controller" id="YMl-vm-6dH" customClass="PairingViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Food Pairing Controller" id="YMl-vm-6dH" userLabel="Food Pairing" customClass="PairingViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k80-zp-g9Z"/>
                         <viewControllerLayoutGuide type="bottom" id="YPh-w4-HPv"/>
@@ -575,12 +804,16 @@
                     </tabBar>
                     <connections>
                         <segue destination="Xg5-jz-L8Q" kind="relationship" relationship="viewControllers" id="fOP-8q-HzZ"/>
-                        <segue destination="i96-Tq-V48" kind="relationship" relationship="viewControllers" id="VpI-4x-m6U"/>
-                        <segue destination="rSv-2A-Ro9" kind="relationship" relationship="viewControllers" id="MwZ-n1-ikc"/>
-                        <segue destination="19E-RV-fLi" kind="relationship" relationship="viewControllers" id="oTf-fA-vOG"/>
                         <segue destination="YMl-vm-6dH" kind="relationship" relationship="viewControllers" id="3VK-Ec-i1r"/>
+                        <segue destination="rSv-2A-Ro9" kind="relationship" relationship="viewControllers" id="MwZ-n1-ikc"/>
+                        <segue destination="rlb-2A-eSg" kind="relationship" relationship="viewControllers" id="Gr1-F6-Tha"/>
+                        <segue destination="4S5-Fz-ejD" kind="relationship" relationship="viewControllers" id="HbW-BK-qr1"/>
+                        <segue destination="i96-Tq-V48" kind="relationship" relationship="viewControllers" id="VpI-4x-m6U"/>
+                        <segue destination="19E-RV-fLi" kind="relationship" relationship="viewControllers" id="oTf-fA-vOG"/>
                         <segue destination="5ob-H4-Ycs" kind="relationship" relationship="viewControllers" id="OKr-x4-5Tt"/>
                         <segue destination="Ays-U5-Qni" kind="relationship" relationship="viewControllers" id="cMK-th-klu"/>
+                        <segue destination="Cw8-lc-xPZ" kind="relationship" relationship="viewControllers" id="vX1-nk-H8R"/>
+                        <segue destination="F3a-gr-tbM" kind="relationship" relationship="viewControllers" id="zg5-lC-YAb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nG2-xq-e1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -614,7 +847,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Ales_vs_Lagers.PNG" width="595" height="200"/>
         <image name="Amber_Ingr.png" width="1542" height="1188"/>
+        <image name="Hops.jpg" width="464" height="1468"/>
         <image name="NewCellarPhoto" width="1200" height="800"/>
         <image name="barley-25" width="25" height="25"/>
         <image name="beer_bottle_filled-25" width="25" height="25"/>
@@ -625,6 +860,7 @@
         <image name="cheese-25" width="25" height="25"/>
         <image name="cooking_pot_filled-25" width="25" height="25"/>
         <image name="evaluation" width="637" height="328"/>
+        <image name="search-icon-25" width="25" height="25"/>
         <image name="true_false-25" width="25" height="25"/>
     </resources>
 </document>
