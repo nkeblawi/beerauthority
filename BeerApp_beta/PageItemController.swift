@@ -14,6 +14,7 @@ class PageItemController: UIViewController {
     @IBOutlet weak var beerImage: UIImageView!
     @IBOutlet weak var buttonRecommendedURL: UIButton!
     @IBOutlet weak var beerDescriptionLabel: PaddingLabel!
+    @IBOutlet weak var upArrowImage: UIImageView!
     
     var itemIndex: Int = 0
     var urlString: String = "http://www.ratebeer.com"
@@ -47,6 +48,11 @@ class PageItemController: UIViewController {
         beerImage.addGestureRecognizer(swipeGestureDown)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        beerDescriptionLabel.text = nil
+        beerDescriptionLabel.hidden = true
+    }
+    
     override func viewWillLayoutSubviews() {
         populatePageInfo()
     }
@@ -73,11 +79,17 @@ class PageItemController: UIViewController {
             imageView.contentMode = UIDevice.is4Inch() ?
                 UIViewContentMode.ScaleAspectFit : UIViewContentMode.ScaleAspectFill
         }
+        beerImage.addSubview(upArrowImage)
     }
     
     // Populate page item with beer information
     func populatePageInfo() {
-        strBeerLabel.text = displayBeerName
+        if displayBeerName == "Lambic" {
+            strBeerLabel.text = displayBeerName + "/Fruit"
+        } else {
+            strBeerLabel.text = displayBeerName
+        }
+        
         buttonRecommendedURL.setTitle("Top Rated \(displayBeerName)s", forState: .Normal)
         buttonRecommendedURL.tintColor = UIColor(hexString: "#E66000")
         
@@ -111,7 +123,7 @@ class PageItemController: UIViewController {
             beerDescriptionLabel.numberOfLines = 0
             beerDescriptionLabel.sizeToFit()
             beerDescriptionLabel.hidden = false
-        } else {
+        } else if (sender?.direction == .Down && !beerDescriptionLabel.hidden){
             beerDescriptionLabel.text = nil
             beerDescriptionLabel.hidden = true
         }

@@ -17,7 +17,8 @@ class SearchViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let url = NSURL(string: "http://www.ratebeer.com/m/")
+        //let url = NSURL(string: "https://www.ratebeer.com/search.php")
+        let url = NSURL(string: "https://www.ratebeer.com/m")
         let requestObj = NSURLRequest(URL: url!);
         
         searchWebView.delegate = self

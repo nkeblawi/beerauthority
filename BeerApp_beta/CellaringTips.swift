@@ -10,9 +10,9 @@ import Foundation
 
 struct CellaringTips {
     
-    private let tip_part1: String = "If you are buying beers specifically for cellaring (aging) purposes, opt for brews that are high in alcohol (at least 8% ABV) and malt, and low in hops, as  bittering compounds break down over time."
+    private let tip_part1: String = "If you are buying beers specifically for cellaring (aging) purposes, opt for brews that are high in alcohol (at least 8% ABV) and malt, and low in hops, as bittering compounds break down over time."
         + "\r\n" + "\r\n"
-        + "If you do wish to store hoppy beers like IPAs, keep them refrigerated as cold storage prevents hop oil spoilage."
+        + "If you do wish to store hoppy beers like IPAs, keep them refrigerated, as cold storage prevents hop oil spoilage."
         + "\r\n" + "\r\n"
         + "Watch for these beer label buzzwords when selecting cellar candidates:"
     

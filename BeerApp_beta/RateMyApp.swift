@@ -40,9 +40,6 @@ class RateMyApp: UIViewController, UIAlertViewDelegate {
         }
         return Static.instance
     }
-    deinit {
-        print("deinit called")
-    }
     internal required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -69,7 +66,6 @@ class RateMyApp: UIViewController, UIAlertViewDelegate {
     }
     func trackAppUsage() {
         incrementValueForKey(name: kAppUseCount)
-        
     }
 
     private func isFirstTime() -> Bool {
@@ -105,12 +101,14 @@ class RateMyApp: UIViewController, UIAlertViewDelegate {
         let hasRatedCurrentVersion = prefs.boolForKey(kDidRateVersion)
         let hasDeclinedToRate = prefs.boolForKey(kDeclinedToRate)
         let hasChosenRemindLater = prefs.boolForKey(kRemindLater)
+        
         if hasDeclinedToRate {
             return false
         }
         if hasRatedCurrentVersion {
             return false
         }
+        print("hasChosenRemindLater: \(hasChosenRemindLater)")
         if hasChosenRemindLater {
             let remindLaterDate = prefs.objectForKey(kFirstUseDate) as! NSDate
             let timeInterval = NSDate().timeIntervalSinceDate(remindLaterDate)
@@ -127,9 +125,6 @@ class RateMyApp: UIViewController, UIAlertViewDelegate {
             return true
         }
         return false
-        
-        // for debugging
-        // return true
     }
 
     private func showRatingAlert() {
@@ -158,7 +153,7 @@ class RateMyApp: UIViewController, UIAlertViewDelegate {
         }))
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let controller = appDelegate.window?.rootViewController
+        let controller = appDelegate.window?.rootViewController?.presentedViewController
         controller?.presentViewController(alert, animated: true, completion: nil)
     }
     

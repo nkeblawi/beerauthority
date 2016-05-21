@@ -166,6 +166,7 @@
 		A99486761CD81FCC00573FCD /* AlesVsLagersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99486751CD81FCC00573FCD /* AlesVsLagersViewController.swift */; };
 		A9AC1DDE1BBCA7DC00DB6C5E /* CellaringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC1DDD1BBCA7DC00DB6C5E /* CellaringViewModel.swift */; };
 		A9AC1DE01BBCA8EE00DB6C5E /* CellaringTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC1DDF1BBCA8EE00DB6C5E /* CellaringTips.swift */; };
+		A9AF8EB21CE94C3300DD3A9E /* double arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A9AF8EB11CE94C3300DD3A9E /* double arrow.png */; };
 		A9C35EC41BB6FA430042E99A /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C35EC31BB6FA430042E99A /* BeerViewModel.swift */; };
 		A9C4ACEB1BE1D83F0085585C /* Belgian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9C4ACEA1BE1D83F0085585C /* Belgian.jpg */; };
 		A9F35F5C1C55297800963AC7 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F35F5B1C55297800963AC7 /* SplashScreenViewController.swift */; };
@@ -361,6 +362,7 @@
 		A99486751CD81FCC00573FCD /* AlesVsLagersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlesVsLagersViewController.swift; sourceTree = "<group>"; };
 		A9AC1DDD1BBCA7DC00DB6C5E /* CellaringViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellaringViewModel.swift; sourceTree = "<group>"; };
 		A9AC1DDF1BBCA8EE00DB6C5E /* CellaringTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellaringTips.swift; sourceTree = "<group>"; };
+		A9AF8EB11CE94C3300DD3A9E /* double arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "double arrow.png"; sourceTree = "<group>"; };
 		A9C35EC31BB6FA430042E99A /* BeerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
 		A9C4ACEA1BE1D83F0085585C /* Belgian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Belgian.jpg; sourceTree = "<group>"; };
 		A9F35F5B1C55297800963AC7 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 		A9DE7E401BE1CFA3002C76C8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A9AF8EB11CE94C3300DD3A9E /* double arrow.png */,
 				A905A0C11CCD85AB0026868F /* Hops.jpg */,
 				A99486731CD81C6A00573FCD /* Ales_vs_Lagers.PNG */,
 				A96F63C51C54103A00917F7E /* Splash */,
@@ -878,6 +881,7 @@
 				A94EADFD1C59865500C67EAF /* beerapp_final_00041.jpg in Resources */,
 				A91A71641C64355600FB8208 /* Belgian_Ingr.png in Resources */,
 				A94EADEB1C59865500C67EAF /* beerapp_final_00023.jpg in Resources */,
+				A9AF8EB21CE94C3300DD3A9E /* double arrow.png in Resources */,
 				A9032D861BE6A60E00E56BBD /* IPA.jpg in Resources */,
 				A9032D871BE6A60E00E56BBD /* Lambic.jpg in Resources */,
 				A94EAE221C59865500C67EAF /* beerapp_final_00078.jpg in Resources */,

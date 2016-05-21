@@ -22,7 +22,7 @@ class BrewingViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Brewing Instructions"
+        self.navigationItem.title = "Brewing Process"
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hexString: "#3F3C2D")]
     }
 

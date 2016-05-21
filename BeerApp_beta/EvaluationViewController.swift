@@ -24,8 +24,17 @@ class EvaluationViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         scrollView.contentSize = view.bounds.size
         scrollView.autoresizingMask = UIViewAutoresizing.FlexibleHeight
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         initializeView()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        scrollView.contentOffset = CGPointMake(0, 0);
+        for view in bodyView.subviews {
+            view.removeFromSuperview()
+        }
     }
     
     override func viewDidLayoutSubviews() {

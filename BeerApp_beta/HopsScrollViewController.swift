@@ -25,6 +25,15 @@ class HopsScrollViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "Hop Guide"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hexString: "#3F3C2D")]
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        scrollView.contentOffset = CGPointMake(0, 0);
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         updateMinZoomScaleForSize(scrollView.bounds.size)

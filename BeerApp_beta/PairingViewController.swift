@@ -28,6 +28,7 @@ class PairingViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidAppear(animated: Bool) {
         // Prompt to rate app
         let rate = RateMyApp.sharedInstance
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             rate.trackAppUsage()
         })

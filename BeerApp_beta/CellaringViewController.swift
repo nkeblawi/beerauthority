@@ -23,6 +23,7 @@ class CellaringViewController: UIViewController, UIScrollViewDelegate {
 
         // Do any additional setup after loading the view.
         scrollView.delegate = self
+        /*
         if let lastView = scrollView.subviews.last {
             var sizeOfContent: CGFloat = 0
             let wd: CGFloat = lastView.frame.origin.y
@@ -30,16 +31,24 @@ class CellaringViewController: UIViewController, UIScrollViewDelegate {
             sizeOfContent = wd + ht
             scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, sizeOfContent)
         }
+        */
+        scrollView.contentSize = view.bounds.size
+        scrollView.autoresizingMask = UIViewAutoresizing.FlexibleHeight
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "Cellaring 101"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hexString: "#3F3C2D")]
         initializeView()
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Cellaring"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hexString: "#3F3C2D")]
-    }
+
     
     override func viewWillDisappear(animated: Bool) {
         self.navigationItem.title = "Cellaring Controller"
+        scrollView.contentOffset = CGPointMake(0, 0);
+        for view in bodyView.subviews {
+            view.removeFromSuperview()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,7 +84,7 @@ class CellaringViewController: UIViewController, UIScrollViewDelegate {
         let screenWidth: Int = Int(screenSize.width)
         
         let startX = 25
-        let startY = UIDevice.isLandscape() ? 100 : 25
+        let startY = UIDevice.isLandscape() ? 100 : 50
         let descriptionWidth = screenWidth - (startX * 2)
         
         let fontSize: CGFloat = UIDevice.currentDevice().userInterfaceIdiom == .Pad ? 16 : 12
@@ -87,7 +96,7 @@ class CellaringViewController: UIViewController, UIScrollViewDelegate {
         labelDesc.textColor = UIColor(hexString: "#3F3C2D")
         labelDesc.sizeToFit()
         bodyView.addSubview(labelDesc)
-        scrollView.contentSize.height = titleView.bounds.height + labelDesc.bounds.height + CGFloat(startY)
+        scrollView.contentSize.height = titleView.bounds.height + labelDesc.bounds.height + CGFloat(startY * 2)
     }
     
     /*

@@ -27,8 +27,19 @@ class AlesVsLagersViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         scrollView.contentSize = view.bounds.size
         scrollView.autoresizingMask = UIViewAutoresizing.FlexibleHeight
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "Ales vs. Lagers"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hexString: "#3F3C2D")]
         populatePageInfo()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        scrollView.contentOffset = CGPointMake(0, 0);
+        for view in bodyView.subviews {
+            view.removeFromSuperview()
+        }
     }
     
     override func viewWillLayoutSubviews() {
@@ -66,7 +77,7 @@ class AlesVsLagersViewController: UIViewController, UIScrollViewDelegate {
         let descRect = CGRect(x: startX, y: startY, width: descriptionWidth, height: 800)
         
         AlesVsLagersLabel.frame = descRect
-        AlesVsLagersLabel.text = "There are really only two main types of beer: Ales and Lagers. The significant differences between these two types are the way they ferment." + "\r\n" +
+        AlesVsLagersLabel.text = "There are only two main types of beer: Ales and Lagers. The significant differences between these two types are the way they ferment." + "\r\n" +
             "\r\n" +
             "Ales are known as top fermenters and can ferment in just a few days. Ales ferment between 68 and 76 degrees. Ales tend to have heavier bodies, more alcohol, a darker hue and are cloudier than lagers." + "\r\n" +
             "\r\n" +

@@ -17,6 +17,6 @@ class Pilsner: Beer {
         
         super.ingredients = [Ingredient(ingredientType: IngredientType.Hops)]
         
-        super.beerDescription = "Lighter in color and body with a malty residual sweetness in aroma and flavor.  Slight grainy, corn-like sweetness from the use of maize with substantial offsetting hop bitterness. Rice-based versions are crisper, drier, and often lack corn-like flavors. Grassy, biscuit, and green apple flavor characteristics are common with pilsners. Alcohol content range between 4.5%-6%. The German and Bohemian-style pils are leaders in this style." + "\r\n"
+        super.beerDescription = "Pilsner (also pilsener, pilsen or simply pils) takes its name from the city of Plzeň, Bohemia, Czech Republic, where it was first produced in 1842. Lighter in color and body with a malty residual sweetness in aroma and flavor.  Slight grainy, corn-like sweetness from the use of maize with substantial offsetting hop bitterness. Rice-based versions are crisper, drier, and often lack corn-like flavors. Grassy, biscuit, and green apple flavor characteristics are common with pilsners. Alcohol content range between 4.5%-6%. The German and Bohemian-style pils are leaders in this style." + "\r\n"
     }
 }

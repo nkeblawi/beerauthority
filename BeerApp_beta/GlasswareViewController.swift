@@ -21,6 +21,7 @@ class GlasswareViewController: UIViewController, UIScrollViewDelegate {
         
         // Do any additional setup after loading the view.
         scrollView.delegate = self
+        /*
         if let lastView = scrollView.subviews.last {
             var sizeOfContent: CGFloat = 0
             let wd: CGFloat = lastView.frame.origin.y
@@ -28,16 +29,23 @@ class GlasswareViewController: UIViewController, UIScrollViewDelegate {
             sizeOfContent = wd + ht
             scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, sizeOfContent)
         }
-        initializeView()
+        */
+        scrollView.contentSize = view.bounds.size
+        scrollView.autoresizingMask = UIViewAutoresizing.FlexibleHeight
     }
-    
+
     override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Glassware"
+        self.navigationItem.title = "Glassware Types"
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hexString: "#3F3C2D")]
+        initializeView()
     }
     
     override func viewWillDisappear(animated: Bool) {
         self.navigationItem.title = "Glassware Controller"
+        scrollView.contentOffset = CGPointMake(0, -20);
+        for view in bodyView.subviews {
+            view.removeFromSuperview()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -67,7 +75,7 @@ class GlasswareViewController: UIViewController, UIScrollViewDelegate {
         }
         initializeView()
     }
-
+    
     // Populate the view page with glassware information
     func initializeView() {
         iterateThroughGlassArray()

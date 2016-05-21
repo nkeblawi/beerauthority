@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JmC-kC-BUW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JmC-kC-BUW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-1210" y="1651"/>
         </scene>
-        <!--Ales vs Lagers-->
+        <!--Ales vs. Lagers-->
         <scene sceneID="Oot-du-wF5">
             <objects>
-                <viewController id="F3a-gr-tbM" userLabel="Ales vs Lagers" customClass="AlesVsLagersViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Ales vs. Lagers" id="F3a-gr-tbM" customClass="AlesVsLagersViewController" customModule="BeerAuthority" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="muv-46-PWc"/>
                         <viewControllerLayoutGuide type="bottom" id="UpK-1A-V4j"/>
@@ -137,7 +137,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Ales &amp; Lagers" image="beer_bottle_filled-25" id="0wt-cn-lx3" userLabel="Ales &amp; Lagers"/>
+                    <tabBarItem key="tabBarItem" title="Ales vs. Lagers" image="scales_of_Balance_filled-25" id="0wt-cn-lx3" userLabel="Ales &amp; Lagers"/>
                     <connections>
                         <outlet property="AlesVsLagersImage" destination="nXa-h4-xcc" id="ULI-Xz-FKJ"/>
                         <outlet property="bodyView" destination="GhG-WU-LQn" id="Z16-mQ-9Vr"/>
@@ -381,7 +381,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Hops" image="barley-25" id="DlS-Y7-0hc"/>
+                    <tabBarItem key="tabBarItem" title="Hop Guide" image="hops-25" id="DlS-Y7-0hc"/>
                     <connections>
                         <outlet property="imageView" destination="3ix-Kw-C5v" id="gJv-l0-nAN"/>
                         <outlet property="scrollView" destination="7WM-cW-KBr" id="gaS-kE-M6w"/>
@@ -448,7 +448,7 @@
                             <constraint firstItem="bIf-1K-mDb" firstAttribute="top" secondItem="bm3-zS-KdE" secondAttribute="bottom" id="hb3-Wh-GQI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Glassware" image="beer_glass-25" id="vS8-nW-i7z"/>
+                    <tabBarItem key="tabBarItem" title="Glassware Types" image="beer_glass-25" id="vS8-nW-i7z"/>
                     <connections>
                         <outlet property="bodyView" destination="8G1-7E-Blw" id="XdU-9K-Up0"/>
                         <outlet property="contentView" destination="bm3-zS-KdE" id="oab-GH-NwM"/>
@@ -523,7 +523,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Brewing" image="cooking_pot_filled-25" id="irT-kJ-W25"/>
+                    <tabBarItem key="tabBarItem" title="Brewing Process" image="cooking_pot_filled-25" id="irT-kJ-W25"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txj-b1-Kjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -582,11 +582,18 @@
                                     <constraint firstItem="h1C-YA-EwU" firstAttribute="leading" secondItem="Iyh-Kk-u0S" secondAttribute="leading" id="TZS-t9-JJe"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="double arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="TZn-JZ-dpc" userLabel="Up Arrow Image">
+                                <rect key="frame" x="550" y="503" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2lc-9G-MFt"/>
+                                    <constraint firstAttribute="width" constant="50" id="gTY-ru-f0f"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zxF-i5-Twd">
                                 <rect key="frame" x="0.0" y="70" width="600" height="483"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-wJ-IPK" customClass="PaddingLabel" customModule="BeerAuthority" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="538.5" width="600" height="14.5"/>
+                                <rect key="frame" x="0.0" y="538" width="600" height="15"/>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="highlightedColor"/>
@@ -596,6 +603,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="zxF-i5-Twd" secondAttribute="trailing" constant="-20" id="2VG-uB-bhS"/>
                             <constraint firstItem="bkx-QM-iTq" firstAttribute="top" secondItem="nj6-f5-IaT" secondAttribute="bottom" constant="5" id="BUv-K0-toy"/>
+                            <constraint firstAttribute="trailing" secondItem="TZn-JZ-dpc" secondAttribute="trailing" id="Fr2-tb-Pbh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Iyh-Kk-u0S" secondAttribute="trailing" id="KYw-IE-g32"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nj6-f5-IaT" secondAttribute="trailing" id="Kca-XI-c6Z"/>
                             <constraint firstAttribute="trailing" secondItem="aHc-wJ-IPK" secondAttribute="trailing" id="RGT-UJ-Zlc"/>
@@ -604,6 +612,7 @@
                             <constraint firstItem="nj6-f5-IaT" firstAttribute="leading" secondItem="GrQ-ce-dq7" secondAttribute="leadingMargin" id="VsZ-1V-0E0"/>
                             <constraint firstItem="zxF-i5-Twd" firstAttribute="top" secondItem="Iyh-Kk-u0S" secondAttribute="bottom" id="W8x-eI-eDD"/>
                             <constraint firstItem="Iyh-Kk-u0S" firstAttribute="leading" secondItem="GrQ-ce-dq7" secondAttribute="leadingMargin" id="YVB-yb-G7y"/>
+                            <constraint firstItem="TZn-JZ-dpc" firstAttribute="bottom" secondItem="zxF-i5-Twd" secondAttribute="bottom" id="Z4x-Hq-9BJ"/>
                             <constraint firstItem="zxF-i5-Twd" firstAttribute="leading" secondItem="GrQ-ce-dq7" secondAttribute="leadingMargin" constant="-20" id="c0r-jH-SlP"/>
                             <constraint firstItem="aHc-wJ-IPK" firstAttribute="bottom" secondItem="zxF-i5-Twd" secondAttribute="bottom" id="kQ2-oB-Z0N"/>
                             <constraint firstItem="Iyh-Kk-u0S" firstAttribute="top" secondItem="ITi-b5-mta" secondAttribute="bottom" id="q6d-6d-l8U"/>
@@ -614,6 +623,7 @@
                         <outlet property="beerImage" destination="zxF-i5-Twd" id="D33-VL-ZEs"/>
                         <outlet property="buttonRecommendedURL" destination="nj6-f5-IaT" id="Phh-y9-lxK"/>
                         <outlet property="strBeerLabel" destination="h1C-YA-EwU" id="rpi-eB-SNk"/>
+                        <outlet property="upArrowImage" destination="TZn-JZ-dpc" id="BQw-sB-iT9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yue-ke-vla" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -737,7 +747,7 @@
                             <constraint firstItem="9Vn-iL-ghU" firstAttribute="top" secondItem="ZwY-1v-gni" secondAttribute="bottom" id="xsj-Cc-XWP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cellaring" image="beer_bottle_filled-25" id="7Jw-ow-jbg"/>
+                    <tabBarItem key="tabBarItem" title="Cellaring 101" image="beer_bottle_filled-25" id="7Jw-ow-jbg"/>
                     <connections>
                         <outlet property="bodyView" destination="9CU-Bo-eWH" id="lQt-NA-aFG"/>
                         <outlet property="contentView" destination="9Vn-iL-ghU" id="s7d-5q-19Z"/>
@@ -859,7 +869,10 @@
         <image name="beerapp_final_00000.jpg" width="640" height="960"/>
         <image name="cheese-25" width="25" height="25"/>
         <image name="cooking_pot_filled-25" width="25" height="25"/>
+        <image name="double arrow.png" width="256" height="256"/>
         <image name="evaluation" width="637" height="328"/>
+        <image name="hops-25" width="25" height="25"/>
+        <image name="scales_of_Balance_filled-25" width="25" height="25"/>
         <image name="search-icon-25" width="25" height="25"/>
         <image name="true_false-25" width="25" height="25"/>
     </resources>
